@@ -55,7 +55,7 @@ abstract class JacksonFactory {
         }
 
         @Override
-        protected String getPropertNameForContextMap() {
+        protected String getPropertyNameForContextMap() {
             return JsonConstants.ELT_CONTEXT_MAP;
         }
 
@@ -70,12 +70,12 @@ abstract class JacksonFactory {
         }
 
         @Override
-        protected String getPropertNameForSource() {
+        protected String getPropertyNameForSource() {
             return JsonConstants.ELT_SOURCE;
         }
 
         @Override
-        protected String getPropertNameForNanoTime() {
+        protected String getPropertyNameForNanoTime() {
             return JsonConstants.ELT_NANO_TIME;
         }
 
@@ -120,17 +120,17 @@ abstract class JacksonFactory {
         }
 
         @Override
-        protected String getPropertNameForContextMap() {
+        protected String getPropertyNameForContextMap() {
             return XmlConstants.ELT_CONTEXT_MAP;
         }
 
         @Override
-        protected String getPropertNameForSource() {
+        protected String getPropertyNameForSource() {
             return XmlConstants.ELT_SOURCE;
         }
 
         @Override
-        protected String getPropertNameForNanoTime() {
+        protected String getPropertyNameForNanoTime() {
             return JsonConstants.ELT_NANO_TIME;
         }
 
@@ -173,17 +173,17 @@ abstract class JacksonFactory {
         }
 
         @Override
-        protected String getPropertNameForContextMap() {
+        protected String getPropertyNameForContextMap() {
             return JsonConstants.ELT_CONTEXT_MAP;
         }
 
         @Override
-        protected String getPropertNameForSource() {
+        protected String getPropertyNameForSource() {
             return JsonConstants.ELT_SOURCE;
         }
 
         @Override
-        protected String getPropertNameForNanoTime() {
+        protected String getPropertyNameForNanoTime() {
             return JsonConstants.ELT_NANO_TIME;
         }
 
@@ -241,11 +241,11 @@ abstract class JacksonFactory {
 
     abstract protected String getPropertyNameForInstant();
 
-    abstract protected String getPropertNameForContextMap();
+    abstract protected String getPropertyNameForContextMap();
 
-    abstract protected String getPropertNameForSource();
+    abstract protected String getPropertyNameForSource();
 
-    abstract protected String getPropertNameForNanoTime();
+    abstract protected String getPropertyNameForNanoTime();
 
     abstract protected PrettyPrinter newCompactPrinter();
 
@@ -262,17 +262,17 @@ abstract class JacksonFactory {
         final SimpleFilterProvider filters = new SimpleFilterProvider();
         final Set<String> except = new HashSet<>(3);
         if (!locationInfo) {
-            except.add(this.getPropertNameForSource());
+            except.add(this.getPropertyNameForSource());
         }
         if (!properties) {
-            except.add(this.getPropertNameForContextMap());
+            except.add(this.getPropertyNameForContextMap());
         }
         if (includeMillis) {
             except.add(getPropertyNameForInstant());
         } else {
             except.add(getPropertyNameForTimeMillis());
         }
-        except.add(this.getPropertNameForNanoTime());
+        except.add(this.getPropertyNameForNanoTime());
         filters.addFilter(Log4jLogEvent.class.getName(), SimpleBeanPropertyFilter.serializeAllExcept(except));
         final ObjectWriter writer = this.newObjectMapper().writer(compact ? this.newCompactPrinter() : this.newPrettyPrinter());
         return writer.with(filters);
