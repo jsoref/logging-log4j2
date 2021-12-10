@@ -99,7 +99,7 @@ public class PropertySetter {
     }
 
     /**
-     * Set the properites for the object that match the
+     * Set the properties for the object that match the
      * <code>prefix</code> passed as parameter.
      * @param properties The properties.
      * @param prefix The prefix of the properties to use.

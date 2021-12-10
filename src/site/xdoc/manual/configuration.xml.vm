@@ -1250,7 +1250,7 @@ rootLogger.appenderRef.stdout.ref = STDOUT
                 <td>System properties. The formats are <code>${dollar}{sys:some.property}</code> and <code>${dollar}{sys:some.property:-default_value}</code>.</td>
               </tr>
             </table>
-          <a name="DefaultProperties"/><h3>Default Properites</h3><p>
+          <a name="DefaultProperties"/><h3>Default Properties</h3><p>
           A default property map can be declared in the configuration file by placing a Properties
           element directly after the Configuration element and before any Loggers, Filters,
           Appenders, etc. are declared. If the value cannot be located in the specified lookup the
