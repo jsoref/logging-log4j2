@@ -274,7 +274,7 @@ key will be prefixed with java:comp/env/, however if the key contains a
 By default the JDNI Lookup only supports the java, ldap, and ldaps protocols or no protocol. Additional
 protocols may be supported by specifying them on the ``log4j2.allowedJndiProtocols`` property.
 When using LDAP Java classes that implement the Referenceable interface are not supported for security
-reasons. Only the Java primative classes are supported by default as well as any classes specified by the
+reasons. Only the Java primitive classes are supported by default as well as any classes specified by the
 ``log4j2.allowedLdapClasses`` property. When using LDAP only references to the local host name
 or ip address are supported along with any hosts or ip addresses listed in the
 ``log4j2.allowedLdapHosts`` property.
@@ -613,7 +613,7 @@ while "type" would have to be an item in the Map in a MapMessage.
 
 
 The Spring Boot Lookup retrieves the values of Spring properties from the Spring configuration as well as
-values of the active and default profiles. Specifying a key of `profiles.active` will reutrn the active
+values of the active and default profiles. Specifying a key of `profiles.active` will return the active
 profiles while a key of `profiles.default` will return the default profiles. The default and active
 profiles can be an array. If more than one profile is present they will be returned as a comma separated
 list. To retrieve a single item from the array append `[{index}]` to the key. For example, to return the

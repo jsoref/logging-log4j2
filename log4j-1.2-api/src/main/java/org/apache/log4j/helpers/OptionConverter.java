@@ -258,9 +258,9 @@ public class OptionConverter {
 
     /**
      * Perform variable substitution in string <code>val</code> from the
-     * values of keys found in the system propeties.
+     * values of keys found in the system properties.
      *
-     * <p>The variable substitution delimeters are <b>${</b> and <b>}</b>.
+     * <p>The variable substitution delimiters are <b>${</b> and <b>}</b>.
      *
      * <p>For example, if the System properties contains "key=value", then
      * the call
@@ -274,7 +274,7 @@ public class OptionConverter {
      * <code>props</code> parameter is searched, if the value could not
      * be found there, then substitution defaults to the empty string.
      *
-     * <p>For example, if system propeties contains no value for the key
+     * <p>For example, if system properties contains no value for the key
      * "inexistentKey", then the call
      *
      * <pre>
@@ -283,8 +283,8 @@ public class OptionConverter {
      * will set <code>s</code> to "Value of inexistentKey is []"
      *
      * <p>An {@link IllegalArgumentException} is thrown if
-     * <code>val</code> contains a start delimeter "${" which is not
-     * balanced by a stop delimeter "}". </p>
+     * <code>val</code> contains a start delimiter "${" which is not
+     * balanced by a stop delimiter "}". </p>
      *
      * <p><b>Author</b> Avy Sharell</p>
      *
@@ -306,7 +306,7 @@ public class OptionConverter {
                 // no more variables
                 if (i == 0) { // this is a simple string
                     return val;
-                } else { // add the tail string which contails no variables and return the result.
+                } else { // add the tail string which contains no variables and return the result.
                     sbuf.append(val.substring(i, val.length()));
                     return sbuf.toString();
                 }

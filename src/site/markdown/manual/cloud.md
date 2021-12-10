@@ -258,7 +258,7 @@ any Marker included in the event, includes all the ThreadContext attributes.
 **Note**: The Json Template Layout escapes control sequences so messages that contain '\n' will have those 
 control sequences copied as "\n" into the text rather than converted to a newline character. This bypasses 
 many problems that occur with Log Forwarders such as Filebeat and FluentBit/Fluentd. Kibana will correctly
-interpret these squences as newlines and display them correctly. Also note that the message pattern does
+interpret these sequences as newlines and display them correctly. Also note that the message pattern does
 not contain a timestamp. Kibana will display the timestamp field in its own column so placing it in the 
 message would be redundant.
 
@@ -434,7 +434,7 @@ the configuration of filebeat is straightforward.
 ### Kibana
 Using the EnhancedGelf template, the GelfLayout or the custom template the above configurations the message 
 field will contain a fully formatted log event just as it would  appear in a file Appender. The ThreadContext 
-attributes, custome fields, thread name, etc. will all be available as attributes on each log event that can 
+attributes, custom fields, thread name, etc. will all be available as attributes on each log event that can 
 be used for filtering. The result will resemble
 ![](../images/kibana.png)
 
@@ -487,7 +487,7 @@ Log4j's Docker support may also be found at [Log4j-Docker](../log4j-docker/index
 ## Integration with Kubernetes
 
 Applications managed by Kubernetes can bypass the Docker/Kubernetes logging infrastructure and log directly to 
-either a sidecar forwarder or a logging aggragator cluster while still including all the kubernetes 
+either a sidecar forwarder or a logging aggregator cluster while still including all the kubernetes 
 attributes by using the Log4j 2 [Kubernetes Lookup](lookups.html#KubernetesLookup). More information on
 Log4j's Kubernetes support may also be found at [Log4j-Kubernetes](../log4j-kubernetes/index.html). 
 

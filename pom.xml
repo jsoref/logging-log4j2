@@ -250,7 +250,7 @@
     <javax.persistence>2.2.1</javax.persistence>
     <osgi.api.version>1.10.0</osgi.api.version>
     <activemq.version>5.16.2</activemq.version>
-    <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
+    <!-- Allow Clirr severity to be overridden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
     <jctoolsVersion>3.3.0</jctoolsVersion>
     <junitVersion>4.13.2</junitVersion>
@@ -1453,7 +1453,7 @@
             <exclude>**/*.yml</exclude>
             <exclude>**/*.yaml</exclude>
             <exclude>**/*.json</exclude>
-            <excllude>**/images/*.drawio</excllude>
+            <exclude>**/images/*.drawio</exclude>
             <exclude>**/fluent-bit.conf</exclude>
             <exclude>**/rabbitmq.config</exclude>
             <exclude>**/MANIFEST.MF</exclude>
@@ -1646,7 +1646,7 @@
             <exclude>**/*.yml</exclude>
             <exclude>**/*.yaml</exclude>
             <exclude>**/*.json</exclude>
-            <excllude>**/images/*.drawio</excllude>
+            <exclude>**/images/*.drawio</exclude>
             <exclude>**/fluent-bit.conf</exclude>
             <exclude>**/rabbitmq.config</exclude>
             <exclude>**/MANIFEST.MF</exclude>
@@ -1843,7 +1843,7 @@
                 <exclude>**/*.yml</exclude>
                 <exclude>**/*.yaml</exclude>
                 <exclude>**/*.json</exclude>
-                <excllude>**/images/*.drawio</excllude>
+                <exclude>**/images/*.drawio</exclude>
                 <exclude>**/fluent-bit.conf</exclude>
                 <exclude>**/rabbitmq.config</exclude>
                 <exclude>**/MANIFEST.MF</exclude>
