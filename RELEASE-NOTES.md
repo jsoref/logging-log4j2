@@ -64,7 +64,7 @@ Pattern layout no longer enables lookups within message text by default for clea
         as the 'nolookups' message pattern converter option. The old behavior can be enabled on a per-pattern basis
         using '%m{lookups}'.
 * [LOG4J2-3194](https://issues.apache.org/jira/browse/LOG4J2-3194):
-Allow fractional attributes for size attribute of SizeBsaedTriggeringPolicy. Thanks to markuss.
+Allow fractional attributes for size attribute of SizeBasedTriggeringPolicy. Thanks to markuss.
 * [LOG4J2-2978](https://issues.apache.org/jira/browse/LOG4J2-2978):
 Add support for Jakarta EE 9 (Tomcat 10 / Jetty 11) Thanks to Michael Seele.
 * [LOG4J2-3189](https://issues.apache.org/jira/browse/LOG4J2-3189):
