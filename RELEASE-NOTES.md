@@ -96,7 +96,7 @@ Allow AdditionalFields to be ignored if their value is null or a zero-length Str
 * [LOG4J2-3049](https://issues.apache.org/jira/browse/LOG4J2-3049):
 Allow MapMessage and ThreadContext attributes to be prefixed.
 * [LOG4J2=3048](https://issues.apache.org/jira/browse/LOG4J2=3048):
-Add improved MapMessge support to GelfLayout.
+Add improved MapMessage support to GelfLayout.
 * [LOG4J2-3044](https://issues.apache.org/jira/browse/LOG4J2-3044):
 Add RepeatPatternConverter.
 * [LOG4J2-2940](https://issues.apache.org/jira/browse/LOG4J2-2940):
