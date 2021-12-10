@@ -1,0 +1,27 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-patterns
+
+# URL escaped characters
+\%[0-9A-F]{2}
+
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#x?|\%23)[0-9a-fA-FgGrR_]{2,}(?:[uU]?[lL]{0,2}|u\d+)\b
+
+\\repository\b
+\\resources\b
+\\target\b
+\\tools\b
+
+due-to="[^"]+"
+dev="[^"]+"
+
+# Compiler flags
+[\t >"'`=](?:-J|)-[DPWXY]
+
+# flag
+-v -o
+
+# ignore long runs of a single character:
+\b([A-Za-z])\g{-1}{3,}\b
+
+# tar arguments
+\b(?:\\n|)tar(?:\s+-[a-zA-Z]+|\s[a-z]+)+
