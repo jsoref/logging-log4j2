@@ -66,7 +66,7 @@
           appenders and filters or manipulate the configuration in any way.
         </p>
         <a name="Architecture"/>
-        <subsection name="Configuration Archhitecture">
+        <subsection name="Configuration Architecture">
           <p>
             In part because support for XML was added first, Log4j's configuration is reflected as a tree structure.
             In fact every configuration dialect, including the ConfigurationBuilder, generates a Node for every
