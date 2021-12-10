@@ -312,7 +312,7 @@ public class LoggerTest {
     }
 
     @Test
-    public void debugWithParms() {
+    public void debugWithParams() {
         logger.debug("Hello, {}", "World");
         final List<LogEvent> events = app.getEvents();
         assertEventCount(events, 1);

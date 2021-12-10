@@ -160,7 +160,7 @@ public class LoggerTest {
     }
 
     @Test
-    public void debugWithParms() {
+    public void debugWithParams() {
         logger.debug("Hello, {}", "World");
         assertThat(list.strList, hasSize(1));
     }
