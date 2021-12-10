@@ -975,7 +975,7 @@
         Restore constructor to ThrowablePatternConverter that was removed in 2.8.2.
       </action>
       <action issue="LOG4J2-2622" dev="rgoers" type="fix">
-        StructuredDataId was ignoring maxLength atribute.
+        StructuredDataId was ignoring maxLength attribute.
       </action>
       <action issue="LOG4J2-2636" dev="rgoers" type="fix">
         RFC5424Layout was not properly setting default Structured Element id for the MDC
