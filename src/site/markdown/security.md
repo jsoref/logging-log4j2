@@ -56,7 +56,7 @@ Base CVSS Score: 10.0 CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
 
 Versions Affected: all versions from 2.0-beta9 to 2.14.1
 
-Descripton: Apache Log4j2 <=2.14.1 JNDI features used in configuration, log messages, and parameters do not 
+Description: Apache Log4j2 <=2.14.1 JNDI features used in configuration, log messages, and parameters do not 
 protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log 
 messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup 
 substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default.
@@ -83,7 +83,7 @@ CVSS Base Score: 3.7 (Low) CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
 
 Versions Affected: all versions from 2.0-alpha1 to 2.13.1
 
-Descripton: Improper validation of certificate with host mismatch in
+Description: Improper validation of certificate with host mismatch in
 Log4j2 SMTP appender. This could allow an SMTPS connection to be
 intercepted by a man-in-the-middle attack which could leak any log
 messages sent through that appender. 

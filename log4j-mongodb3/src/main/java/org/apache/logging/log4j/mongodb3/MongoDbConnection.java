@@ -40,7 +40,7 @@ public final class MongoDbConnection extends AbstractNoSqlConnection<Document, M
     private static MongoCollection<Document> getOrCreateMongoCollection(final MongoDatabase database,
             final String collectionName, final boolean isCapped, final Integer sizeInBytes) {
         try {
-            LOGGER.debug("Gettting collection '{}'...", collectionName);
+            LOGGER.debug("Getting collection '{}'...", collectionName);
             // throws IllegalArgumentException if collectionName is invalid
             return database.getCollection(collectionName);
         } catch (final IllegalStateException e) {

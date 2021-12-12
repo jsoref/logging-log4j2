@@ -1559,16 +1559,16 @@ public class ConnectionFactory {
               <th>Description</th>
             </tr>
             <tr>
-              <td>allowdLdapClasses</td>
+              <td>allowedLdapClasses</td>
               <td>String</td>
               <td>null</td>
               <td>
                 A comma separated list of fully qualified class names that may be accessed by LDAP. The classes
-                must implement Serializable. Only applies when the JMS Appender By default only Java primative classes are allowed.
+                must implement Serializable. Only applies when the JMS Appender By default only Java primitive classes are allowed.
               </td>
             </tr>
             <tr>
-              <td>allowdLdapHosts</td>
+              <td>allowedLdapHosts</td>
               <td>String</td>
               <td>null</td>
               <td>
@@ -1577,7 +1577,7 @@ public class ConnectionFactory {
               </td>
             </tr>
             <tr>
-              <td>allowdJndiProtocols</td>
+              <td>allowedJndiProtocols</td>
               <td>String</td>
               <td>null</td>
               <td>
@@ -4205,7 +4205,7 @@ public class JpaLogEntity extends AbstractLogEventWrapperEntity {
 						<td>String</td>
 						<td>
 							The pattern of the file name of the archived log file. The format
-							of the pattern should is dependent on the RolloverStrategu that is used. The DefaultRolloverStrategy
+							of the pattern should is dependent on the RolloverStrategy that is used. The DefaultRolloverStrategy
 							will accept both a date/time pattern compatible with
 							<a
 								href="http://download.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">

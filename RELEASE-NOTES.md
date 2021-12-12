@@ -46,10 +46,10 @@ to determine whether a section of configuration should be included.
 Key changes to note:
 
 * Prior to this release Log4j would automatically resolve Lookups contained in the message or its parameters in the
-Pattern Layout. Thisbehavior is no longer the default and must be enabled by specifying %msg{lookup}.
+Pattern Layout. This behavior is no longer the default and must be enabled by specifying %msg{lookup}.
 * The JNDI Lookup has been restricted to only support the java, ldap, and ldaps protocols by default. LDAP also no
 longer supports classes that implement the Referenceable interface and restricts the Serializable classes to the
-Java primative classes by default and requires an allow list to be specified to access remote LDAP servers.
+Java primitive classes by default and requires an allow list to be specified to access remote LDAP servers.
 
 The Log4j 2.15.0 API, as well as many core components, maintains binary compatibility with previous releases.
 
@@ -64,7 +64,7 @@ Pattern layout no longer enables lookups within message text by default for clea
         as the 'nolookups' message pattern converter option. The old behavior can be enabled on a per-pattern basis
         using '%m{lookups}'.
 * [LOG4J2-3194](https://issues.apache.org/jira/browse/LOG4J2-3194):
-Allow fractional attributes for size attribute of SizeBsaedTriggeringPolicy. Thanks to markuss.
+Allow fractional attributes for size attribute of SizeBasedTriggeringPolicy. Thanks to markuss.
 * [LOG4J2-2978](https://issues.apache.org/jira/browse/LOG4J2-2978):
 Add support for Jakarta EE 9 (Tomcat 10 / Jetty 11) Thanks to Michael Seele.
 * [LOG4J2-3189](https://issues.apache.org/jira/browse/LOG4J2-3189):
@@ -96,7 +96,7 @@ Allow AdditionalFields to be ignored if their value is null or a zero-length Str
 * [LOG4J2-3049](https://issues.apache.org/jira/browse/LOG4J2-3049):
 Allow MapMessage and ThreadContext attributes to be prefixed.
 * [LOG4J2=3048](https://issues.apache.org/jira/browse/LOG4J2=3048):
-Add improved MapMessge support to GelfLayout.
+Add improved MapMessage support to GelfLayout.
 * [LOG4J2-3044](https://issues.apache.org/jira/browse/LOG4J2-3044):
 Add RepeatPatternConverter.
 * [LOG4J2-2940](https://issues.apache.org/jira/browse/LOG4J2-2940):

@@ -42,9 +42,9 @@ When referencing a configuration located in Spring Cloud Config the configuratio
 log4j.configurationFile=http://host.docker.internal:8888/ConfigService/sampleapp/default/master/log4j2.xml
 ```
 
-Log4j also supports Composite Configurations. The standard way to do that is to concatentate the paths to the files in
+Log4j also supports Composite Configurations. The standard way to do that is to concatenate the paths to the files in
 a comma separated string. Unfortunately, Spring validates the URL being provided and commas are not allowed. 
-Therefore, additional configurations must be supplied as "override" query parametes.
+Therefore, additional configurations must be supplied as "override" query parameters.
 
 ```
 log4j.configurationFile=http://host.docker.internal:8888/ConfigService/sampleapp/default/master/log4j2.xml
@@ -73,7 +73,7 @@ log4j2.configurationUserName=guest
 log4j2.configurationPassword=guest
 ```
 As noted above, Log4j supports accessing logging configuration from bootstrap.yml. As an example, to configure reading 
-from a Spring Cloud Configuration service using basic authoriztion you can do:
+from a Spring Cloud Configuration service using basic authorization you can do:
 ```
 spring:
   application:

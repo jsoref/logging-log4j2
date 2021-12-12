@@ -282,9 +282,9 @@ public class PluginBuilder implements Builder<Object> {
         return args;
     }
 
-    private static String[] extractPluginAliases(final Annotation... parmTypes) {
+    private static String[] extractPluginAliases(final Annotation... paramTypes) {
         String[] aliases = null;
-        for (final Annotation a : parmTypes) {
+        for (final Annotation a : paramTypes) {
             if (a instanceof PluginAliases) {
                 aliases = ((PluginAliases) a).value();
             }

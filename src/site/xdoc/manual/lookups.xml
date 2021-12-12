@@ -278,7 +278,7 @@
           <p>By default the JDNI Lookup only supports the java, ldap, and ldaps protocols or no protocol. Additional
             protocols may be supported by specifying them on the <code>log4j2.allowedJndiProtocols</code> property.
             When using LDAP Java classes that implement the Referenceable interface are not supported for security
-            reasons. Only the Java primative classes are supported by default as well as any classes specified by the
+            reasons. Only the Java primitive classes are supported by default as well as any classes specified by the
             <code>log4j2.allowedLdapClasses</code> property. When using LDAP only references to the local host name
             or ip address are supported along with any hosts or ip addresses listed in the
             <code>log4j2.allowedLdapHosts</code> property.</p>
@@ -323,7 +323,7 @@
             <tr><td>imageId</td><td>The id assigned to the container image</td></tr>
             <tr><td>imageName</td><td>The name assigned to the container image</td></tr>
             <tr><td>labels</td><td>All labels formatted in a list</td></tr>
-            <tr><td>labesl.app</td><td>The application name</td></tr>
+            <tr><td>labels.app</td><td>The application name</td></tr>
             <tr><td>labels.podTemplateHash</td><td>The pod's template hash value</td></tr>
             <tr><td>masterUrl</td><td>The URL used to access the API server</td></tr>
             <tr><td>namespaceId</td><td>The id of the namespace the various kubernetes components are located within</td></tr>
@@ -595,7 +595,7 @@ logger.info(PERFORMANCE, "Message in Performance.log");]]></pre>
         <subsection name="Spring Boot Lookup">
           <p>
             The Spring Boot Lookup retrieves the values of Spring properties from the Spring configuration as well as
-            values of the active and default profiles. Specifying a key of "profiles.active" will reutrn the active
+            values of the active and default profiles. Specifying a key of "profiles.active" will return the active
             profiles while a key of "profiles.default" will return the default profiles. The default and active
             profiles can be an array. If more than one profile is present they will be returned as a comma separated
             list. To retrieve a single item from the array append "[{index}]" to the key. For example, to return the

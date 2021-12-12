@@ -207,14 +207,14 @@ public class LoggerTest {
     }
 
     @Test
-    public void debugWithParms() {
+    public void debugWithParams() {
         logger.debug("Hello, {}", "World");
         assertEquals(1, results.size());
         assertTrue(results.get(0).startsWith(" DEBUG Hello, World"), "Incorrect substitution");
     }
 
     @Test
-    public void debugWithParmsAndThrowable() {
+    public void debugWithParamsAndThrowable() {
         logger.debug("Hello, {}", "World", new RuntimeException("Test Exception"));
         assertEquals(1, results.size());
         assertTrue(

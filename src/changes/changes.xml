@@ -43,7 +43,7 @@
         using '%m{lookups}'.
       </action>
       <action issue="LOG4J2-3194" dev="rgoers" type="add" due-to="markuss">
-        Allow fractional attributes for size attribute of SizeBsaedTriggeringPolicy.
+        Allow fractional attributes for size attribute of SizeBasedTriggeringPolicy.
       </action>
       <action issue="LOG4J2-2978" dev="rgoers" type="add" due-to="Michael Seele">
         Add support for Jakarta EE 9 (Tomcat 10 / Jetty 11)
@@ -90,7 +90,7 @@
         Allow MapMessage and ThreadContext attributes to be prefixed.
       </action>
       <action issue="LOG4J2=3048" dev="rgoers" type="add">
-        Add improved MapMessge support to GelfLayout.
+        Add improved MapMessage support to GelfLayout.
       </action>
       <action issue="LOG4J2-3044" dev="rgoers" type="add">
         Add RepeatPatternConverter.
@@ -125,7 +125,7 @@
         Fix Log Event Level vs Logger Config Level table.
       </action>
       <action issue="LOG4J2-2540" dev="rgoers">
-        Minor documentation correctsion regarding log levels.
+        Minor documentation correction regarding log levels.
       </action>
       <action issue="LOG4J2-2541" dev="rgoers" due-to="Gerold Broser">
         Minor documentation corrections in the configuration section.
@@ -576,7 +576,7 @@
         size based rollover after a time based rollover had occurred.
       </action>
       <action issue="LOG4J2-2875" dev="rgoers" type="fix">
-        Rollover was failing to create directories when using a DirectFileeRolloverStrategy.
+        Rollover was failing to create directories when using a DirectFileRolloverStrategy.
       </action>
       <action issue="LOG4J2-2859" dev="rgoers" type="fix" due-to="Yanming Zhou">
         Fixed typos where mergeFactory should be mergeStrategy.
@@ -751,7 +751,7 @@
       <action issue="LOG4J2-2717" dev="rgoers" type="fix">
         Slow initialization on Windows due to accessing network interfaces.
       </action>
-      <action issue="LOG4J2-2789" dev="rgeors" type="update" due-to="Marius Volkhart">
+      <action issue="LOG4J2-2789" dev="rgoers" type="update" due-to="Marius Volkhart">
         Conditionally perform status logging calculations in PluginRegistry.
       </action>
       <action issue="LOG4J2-2756" dev="rgoers" type="fix">
@@ -788,7 +788,7 @@
         PluginProcessor should use Messager instead of System.out.
       </action>
       <action issue="LOG4J2-2703" dev="rgoers" type="fix" due-to="Volkan Yazici">
-        MapMessage.getFormattedMesssage() would incorrectly format objects.
+        MapMessage.getFormattedMessage() would incorrectly format objects.
       </action>
       <action issue="LOG4J2-2760" dev="rgoers" type="fix" due-to="Christoph Kaser">
         Always write header on a new OutputStream.
@@ -804,7 +804,7 @@
         NullPointerException when using a custom DirectFileRolloverStrategy without a file name.
       </action>
       <action issue="LOG4J2-2768" dev="rgoers" type="fix" due-to="Marius Volkhart">
-        Add mulit-parameter overloads to LogBuilder.
+        Add multi-parameter overloads to LogBuilder.
       </action>
       <action issue="LOG4J2-2770" dev="rgoers" type="fix" due-to="Bill Kuker">
         Fixed NullPointerException after reconfiguring via JMX.
@@ -879,7 +879,7 @@
         Add ThreadContext.putIfNotNull method.
       </action>
       <action issue="LOG4J2-2731" dev="rgoers" type="add">
-        Add a Level Patttern Selector.
+        Add a Level Pattern Selector.
       </action>
       <action issue="LOG4J2-2701" dev="rgoers" type="update">
         Update Jackson to 2.9.10.
@@ -975,7 +975,7 @@
         Restore constructor to ThrowablePatternConverter that was removed in 2.8.2.
       </action>
       <action issue="LOG4J2-2622" dev="rgoers" type="fix">
-        StructuredDataId was ignoring maxLength atribute.
+        StructuredDataId was ignoring maxLength attribute.
       </action>
       <action issue="LOG4J2-2636" dev="rgoers" type="fix">
         RFC5424Layout was not properly setting default Structured Element id for the MDC
@@ -1359,7 +1359,7 @@
         logged throwable and provided varargs array.
       </action>
       <action issue="LOG4J2-2368" dev="ckozak" type="fix">
-        Nested logging doesn't clobber AbstractStringLayout cached StringBuidlers
+        Nested logging doesn't clobber AbstractStringLayout cached StringBuilders
       </action>
       <action issue="LOG4J2-2373" dev="ckozak" type="fix" due-to="Kevin Meurer">
         StringBuilders.escapeJson implementation runs in linear time. Escaping large JSON strings
@@ -3752,7 +3752,7 @@
         Allow JSON layout to create one compact log record per line.
       </action>
       <action issue="LOG4J2-933" dev="ggregory" type="add" due-to="ppiman at gmail.com">
-        HTML layout should not use attribute minimalization for hr noshade.
+        HTML layout should not use attribute minimization for hr noshade.
       </action>
       <action issue="LOG4J2-895" dev="ggregory" type="add">
         Specify the SyslogAppender connect timeout value as part of the configuration.
