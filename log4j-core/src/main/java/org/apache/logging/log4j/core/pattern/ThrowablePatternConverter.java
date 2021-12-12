@@ -58,7 +58,7 @@ public class ThrowablePatternConverter extends LogEventPatternConverter {
      * @param name Name of converter.
      * @param style CSS style for output.
      * @param options options, may be null.
-     * @deprecated Use ThrowablePatternConverter(String name, String stule, String[] options, Configuration config)
+     * @deprecated Use ThrowablePatternConverter(String name, String style, String[] options, Configuration config)
      */
     @Deprecated
     protected ThrowablePatternConverter(final String name, final String style, final String[] options) {
