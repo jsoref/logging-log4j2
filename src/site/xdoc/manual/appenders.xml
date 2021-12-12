@@ -1559,7 +1559,7 @@ public class ConnectionFactory {
               <th>Description</th>
             </tr>
             <tr>
-              <td>allowdLdapClasses</td>
+              <td>allowedLdapClasses</td>
               <td>String</td>
               <td>null</td>
               <td>
@@ -1568,7 +1568,7 @@ public class ConnectionFactory {
               </td>
             </tr>
             <tr>
-              <td>allowdLdapHosts</td>
+              <td>allowedLdapHosts</td>
               <td>String</td>
               <td>null</td>
               <td>
@@ -1577,7 +1577,7 @@ public class ConnectionFactory {
               </td>
             </tr>
             <tr>
-              <td>allowdJndiProtocols</td>
+              <td>allowedJndiProtocols</td>
               <td>String</td>
               <td>null</td>
               <td>
