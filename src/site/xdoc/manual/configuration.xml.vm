@@ -942,7 +942,7 @@ Configuration:
             </p>
             <p>
               Properties configuration files support the advertiser, monitorInterval, name, packages, shutdownHook,
-              shutdownTimeout, status, verbose, and dest attrbutes. See <a href="#ConfigurationSyntax">Configuration Syntax</a>
+              shutdownTimeout, status, verbose, and dest attributes. See <a href="#ConfigurationSyntax">Configuration Syntax</a>
               for the definitions of these attributes.
             </p>
           <pre class="prettyprint linenums">
