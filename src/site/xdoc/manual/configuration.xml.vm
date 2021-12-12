@@ -91,7 +91,7 @@
             tends to be more verbose than using a different document type.
           </p>
           <p>
-            Once the Node tree is created control is delegated to AbstractConfiguration, which convertes the Nodes into
+            Once the Node tree is created control is delegated to AbstractConfiguration, which converts the Nodes into
             their respective Java objects using Log4j's Plugin system and provides all the common functionality.
           </p>
         </subsection>
