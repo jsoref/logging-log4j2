@@ -75,7 +75,7 @@ public class TimestampMessageTest {
 
     public static class PoisonClock implements Clock {
         public PoisonClock() {
-            // Breakpoint here for debuging.
+            // Breakpoint here for debugging.
         }
 
         @Override
