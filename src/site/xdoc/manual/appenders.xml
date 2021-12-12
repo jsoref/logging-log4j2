@@ -4205,7 +4205,7 @@ public class JpaLogEntity extends AbstractLogEventWrapperEntity {
 						<td>String</td>
 						<td>
 							The pattern of the file name of the archived log file. The format
-							of the pattern should is dependent on the RolloverStrategu that is used. The DefaultRolloverStrategy
+							of the pattern should is dependent on the RolloverStrategy that is used. The DefaultRolloverStrategy
 							will accept both a date/time pattern compatible with
 							<a
 								href="http://download.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">
