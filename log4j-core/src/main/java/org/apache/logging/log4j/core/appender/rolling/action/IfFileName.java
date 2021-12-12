@@ -53,7 +53,7 @@ public final class IfFileName implements PathCondition {
      * Constructs a FileNameFilter filter. If both a regular expression and a glob pattern are specified the glob
      * pattern is used and the regular expression is ignored.
      *
-     * @param glob the baseDir-relative path pattern of the files to delete (may contain '*' and '?' wildcarts)
+     * @param glob the baseDir-relative path pattern of the files to delete (may contain '*' and '?' wildcards)
      * @param regex the regular expression that matches the baseDir-relative path of the file(s) to delete
      * @param nestedConditions nested conditions to evaluate if this condition accepts a path
      */
@@ -80,7 +80,7 @@ public final class IfFileName implements PathCondition {
      * regular expression} or a simplified pattern expression described under "glob" in
      * {@link FileSystem#getPathMatcher(String)}.
      *
-     * @return relative path of the file(s) to delete (may contain regular expression or wildcarts)
+     * @return relative path of the file(s) to delete (may contain regular expression or wildcards)
      */
     public String getSyntaxAndPattern() {
         return syntaxAndPattern;
@@ -125,7 +125,7 @@ public final class IfFileName implements PathCondition {
      * If both a regular expression and a glob pattern are specified the glob pattern is used and the regular expression
      * is ignored.
      *
-     * @param glob the baseDir-relative path pattern of the files to delete (may contain '*' and '?' wildcarts)
+     * @param glob the baseDir-relative path pattern of the files to delete (may contain '*' and '?' wildcards)
      * @param regex the regular expression that matches the baseDir-relative path of the file(s) to delete
      * @param nestedConditions nested conditions to evaluate if this condition accepts a path
      * @return A IfFileName condition.
