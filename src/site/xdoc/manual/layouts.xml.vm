@@ -429,7 +429,7 @@ logger.debug("one={}, two={}, three={}", 1, 2, 3);
         <a name="JSONLayout"/>
         <subsection name="JSON Layout">
           <p>
-            <b>Note:</b> JsonTemplate is considered deprecated. JsonTemplateLayout provides more capabilitites and
+            <b>Note:</b> JsonTemplate is considered deprecated. JsonTemplateLayout provides more capabilities and
             should be used instead.
           </p>
 
