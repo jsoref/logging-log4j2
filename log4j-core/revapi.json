@@ -32,7 +32,7 @@
     "configuration": [
       {
         "code": "java.class.removed",
-        "old": "class org.apache.logging.log4j.core.config.ConfiguratonFileWatcher",
+        "old": "class org.apache.logging.log4j.core.config.ConfigurationFileWatcher",
         "justification": "LOG4J2-913 - This class name was misspelled"
       },
       {
