@@ -84,7 +84,7 @@ to determine whether a section of configuration should be included.
 Key changes to note:
 
 * Prior to this release Log4j would automatically resolve Lookups contained in the message or its parameters in the
-Pattern Layout. Thisbehavior is no longer the default and must be enabled by specifying %msg{lookup}.
+Pattern Layout. This behavior is no longer the default and must be enabled by specifying %msg{lookup}.
 * The JNDI Lookup has been restricted to only support the java, ldap, and ldaps protocols by default. LDAP also no
 longer supports classes that implement the Referenceable interface and restricts the Serializable classes to the
 Java primitive classes by default and requires an allow list to be specified to access remote LDAP servers.
