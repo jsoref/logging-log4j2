@@ -72,7 +72,7 @@ public class LoggerTest {
     }
 
     @Test
-    public void basicFlowDepreacted() {
+    public void basicFlowDeprecated() {
         logger.entry();
         logger.exit();
         assertThat(list.strList, hasSize(2));

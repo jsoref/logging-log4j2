@@ -109,7 +109,7 @@ public class LoggerTest {
     }
 
     @Test
-    public void simpleFlowDepreacted() {
+    public void simpleFlowDeprecated() {
         logger.entry(CONFIG);
         logger.exit(0);
         final List<LogEvent> events = app.getEvents();
