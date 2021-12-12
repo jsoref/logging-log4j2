@@ -323,7 +323,7 @@
             <tr><td>imageId</td><td>The id assigned to the container image</td></tr>
             <tr><td>imageName</td><td>The name assigned to the container image</td></tr>
             <tr><td>labels</td><td>All labels formatted in a list</td></tr>
-            <tr><td>labesl.app</td><td>The application name</td></tr>
+            <tr><td>labels.app</td><td>The application name</td></tr>
             <tr><td>labels.podTemplateHash</td><td>The pod's template hash value</td></tr>
             <tr><td>masterUrl</td><td>The URL used to access the API server</td></tr>
             <tr><td>namespaceId</td><td>The id of the namespace the various kubernetes components are located within</td></tr>
