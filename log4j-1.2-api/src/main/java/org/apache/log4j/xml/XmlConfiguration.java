@@ -147,7 +147,7 @@ public class XmlConfiguration extends Log4j1Configuration {
         try {
             LOGGER.debug("System property is : {}", OptionConverter.getSystemProperty(dbfKey, null));
             dbf = DocumentBuilderFactory.newInstance();
-            LOGGER.debug("Standard DocumentBuilderFactory search succeded.");
+            LOGGER.debug("Standard DocumentBuilderFactory search succeeded.");
             LOGGER.debug("DocumentBuilderFactory is: " + dbf.getClass().getName());
         } catch (FactoryConfigurationError fce) {
             Exception e = fce.getException();
