@@ -37,5 +37,5 @@ public interface MergeStrategy {
      * @param target The target Node tree.
      * @param source The source Node tree.
      */
-    void mergConfigurations(Node target, Node source, PluginManager pluginManager);
+    void mergeConfigurations(Node target, Node source, PluginManager pluginManager);
 }
