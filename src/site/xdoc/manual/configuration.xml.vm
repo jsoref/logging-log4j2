@@ -1839,7 +1839,7 @@ public class AwesomeTest {
           <p>
             The following is a list of available global configuration properties. Note that these can only be set once
             per JVM process unlike configuration settings available in configuration files. The <i>Property Name</i>
-            column contains the name used in properties files and system properties; <i>Environemt Variable</i>
+            column contains the name used in properties files and system properties; <i>Environment Variable</i>
             for the equivalent environment variable; and <i>Legacy Property Name</i> for the pre-2.10 name.
           </p>
 <style>
