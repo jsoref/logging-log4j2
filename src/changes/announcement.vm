@@ -87,7 +87,7 @@ Key changes to note:
 Pattern Layout. Thisbehavior is no longer the default and must be enabled by specifying %msg{lookup}.
 * The JNDI Lookup has been restricted to only support the java, ldap, and ldaps protocols by default. LDAP also no
 longer supports classes that implement the Referenceable interface and restricts the Serializable classes to the
-Java primative classes by default and requires an allow list to be specified to access remote LDAP servers.
+Java primitive classes by default and requires an allow list to be specified to access remote LDAP servers.
 
 The Log4j ${relVersion} API, as well as many core components, maintains binary compatibility with previous releases.
 
