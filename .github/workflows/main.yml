@@ -77,7 +77,7 @@ jobs:
         # If the CI run is not initiated from the primary repository, it is highly likely that this is a PR from a user who doesn't have commit rights.
         # Hence, skip this step to avoid permission failures.
         if: github.repository == 'apache/logging-log4j2'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: test-reports-${{ matrix.os }}
           path: '**/*-reports'
